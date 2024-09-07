@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire</title>
+  <link rel="stylesheet" href="style.css"> <!-- Assurez-vous de créer votre propre fichier CSS -->
+</head>
+<body>
+  <div class="container">
+    <h1>Formulaire</h1>
+    <form action="../../actions/creationcv.php" method="post">
+      <div class="form-group">
+        <label for="phone">Numéro de téléphone</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="website">Site web</label>
+        <input type="url" id="website" name="website" required>
+      </div>
+      <div class="form-group">
+        <label>Réseaux sociaux</label>
+        <div class="social-media">
+          <label for="facebook">
+            <input type="checkbox" id="facebook" name="socialMedia-facebook" value="Facebook">
+            Facebook
+          </label>
+          <label for="twitter">
+            <input type="checkbox" id="twitter" name="socialMedia-twitter" value="Twitter">
+            Twitter
+          </label>
+          <label for="youtube">
+            <input type="checkbox" id="youtube" name="socialMedia-youtube" value="YouTube">
+            YouTube
+          </label>
+          <label for="linkedin">
+            <input type="checkbox" id="linkedin" name="socialMedia-linkedin" value="LinkedIn">
+            LinkedIn
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+         <label>Hobby</label>
+         <div class="social-media">
+           <label for="lecture">
+             <input type="checkbox" id="lecture" name="hobby-read" value="Lecture">
+             Lecture
+           </label>
+           <label for="game">
+             <input type="checkbox" id="game" name="hobby-game" value="Game">
+             Game
+           </label>
+           <label for="musique">
+             <input type="checkbox" id="musique" name="hobby-musique" value="Musique">
+             Musique
+           </label>
+           <label for="nature">
+             <input type="checkbox" id="nature" name="hobby-nature" value="Nature">
+             Nature
+           </label>
+         </div>
+       </div>
+      <div class="form-group">
+        <label for="profile">Profil</label>
+        <textarea id="profile" name="profile" rows="4" required></textarea>
+      </div>
+      <hr>
+      <div class="form-group cmpd">
+        <label for="competence">Compétence et Pourcentage de maîtrise</label>
+        <input type="text" id="competence" name="competence" required>
+        <input type="number" id="pourcentage" name="pourcentage" min="0" max="100" required>
+      </div>
+      <span class="logo-button comp"><img src="votre_logo.png" alt="Logo"></span>
+      <hr>
+      <div class="form-group edud">
+        <label>Education</label>
+        <div class="education">
+          <div class="education-item">
+            <label for="edu-start1">Début</label>
+            <input type="date" id="edu-start1" name="edu-start1" required>
+            <label for="edu-end1">Fin</label>
+            <input type="date" id="edu-end1" name="edu-end1" required>
+            <label for="edu-title1">Titre</label>
+            <input type="text" id="edu-title1" name="edu-title1" required>
+            <label for="edu-content1">Contenu</label>
+            <textarea id="edu-content1" name="edu-content1" rows="2" required></textarea>
+          </div>
+        </div>
+      </div>
+      <span class="logo-button edu"><img src="votre_logo.png" alt="Logo"></span>
+      <hr>
+      <div class="form-group exppd">
+        <label>Expérience professionnelle</label>
+        <div class="work-experience">
+          <div class="experience-item">
+            <label for="work-start1">Début</label>
+            <input type="date" id="work-start1" name="work-start1" required>
+            <label for="work-end1">Fin</label>
+            <input type="date" id="work-end1" name="work-end1" required>
+            <label for="work-title1">Titre</label>
+            <input type="text" id="work-title1" name="work-title1" required>
+            <label for="work-content1">Contenu</label>
+            <textarea id="work-content1" name="work-content1" rows="2" required></textarea>
+          </div>
+        </div>
+      </div>
+      <span class="logo-button expp"><img src="votre_logo.png" alt="Logo"></span>
+      <input type="submit" value="Soumettre">
+    </form>
+  </div>
+  <script src="jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
