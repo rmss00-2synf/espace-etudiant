@@ -18,7 +18,6 @@ Welcome to Espace-etudiant! This project is designed to provide a comprehensive 
 ### Blog Section
 - A chat application for student discussions.
 - JavaScript ensures that the page always loads at the bottom, so the latest message is always visible.
-- Plans to implement AJAX for real-time message updates without page refresh.
 - Word suggestion during typing and @-mentions to tag friends are in development.
 - Messages will be formatted when tagging friends if they exist in the database.
 
@@ -27,6 +26,3 @@ Welcome to Espace-etudiant! This project is designed to provide a comprehensive 
 
 ### Logout
 - Includes a button to log out of the application.
-
-## Feedback
-We welcome any feedback or suggestions for improvement. Please feel free to contribute ideas or report issues.
